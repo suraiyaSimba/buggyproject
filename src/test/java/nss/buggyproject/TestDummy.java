@@ -67,8 +67,8 @@ public class TestDummy {
 	}
 	
 	@Test
-	void testNothing() {
-		System.out.println("testNothing...");
+	void testCheck() {
+		System.out.println("testCheck...");
 	}
 
 }
