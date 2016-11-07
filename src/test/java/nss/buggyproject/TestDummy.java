@@ -67,9 +67,16 @@ public class TestDummy {
 	}
 	
 	@Test
-	void testCheck() {
+	void testTrim() {
 		BuggyStringUtil bg = new BuggyStringUtil();
 		assertEquals("teststring", bg.trim(" teststring"));
+	}
+	
+	@Test
+	void testEmptyString() {
+		BuggyStringUtil bg = new BuggyStringUtil();
+		CharSequence cs = null;
+		assertEquals(true, bg.isEmpty(cs));
 	}
 
 }

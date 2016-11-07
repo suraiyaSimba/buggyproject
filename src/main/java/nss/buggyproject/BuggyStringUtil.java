@@ -57,17 +57,13 @@ public class BuggyStringUtil {
 	
 	 public static boolean isEmpty(final CharSequence cs) {
 		 //Introduce defect
-//		         return cs == null || cs.length() == 0;
-		 return cs == null && cs.length() == 0;
+		 return cs == null || cs.length() == 0;
 		     }
 	
 	 
 	  public static String trim(final String str) {
-		  // Introduce defect
-//		          return str == null ? null : str.trim();
-		          
+		  // Introduce defect 
 		  return( (str == null) ? null : str.trim());
-		      
 	  }
 		  
 }
