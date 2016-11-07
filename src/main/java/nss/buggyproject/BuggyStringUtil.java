@@ -66,7 +66,7 @@ public class BuggyStringUtil {
 		  // Introduce defect
 //		          return str == null ? null : str.trim();
 		          
-		  return str == null ? str.trim() : null;
+		  return( (str == null) ? null : str.trim());
 		      
 	  }
 		  

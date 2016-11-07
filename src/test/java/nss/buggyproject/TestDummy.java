@@ -68,7 +68,8 @@ public class TestDummy {
 	
 	@Test
 	void testCheck() {
-		System.out.println("testCheck...");
+		BuggyStringUtil bg = new BuggyStringUtil();
+		assertEquals("teststring", bg.trim(" teststring"));
 	}
 
 }
